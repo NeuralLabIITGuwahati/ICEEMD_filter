@@ -83,5 +83,10 @@ Algorithm_test: Test file to run and test the implementation of the IMF filterin
 	%% Calculate performance of IMF Filter and store accuracies
 	[accuracy_imf,x]=crossvalidate_modified(trialfilelist); 
 
+References
+
+[1]	U. Hoffmann, J. M. Vesin, T. Ebrahimi, and K. Diserens, “An efficient P300-based brain-computer interface for disabled subjects,” J. Neurosci. Methods, vol. 167, no. 1, pp. 115–125, 2008, doi: 10.1016/j.jneumeth.2007.03.005.
+[2]	M. A. Colominas, G. Schlotthauer, and M. E. Torres, “Improved complete ensemble EMD: A suitable tool for biomedical signal processing,” Biomed. Signal Process. Control, vol. 14, no. 1, pp. 19–29, 2014, doi: 10.1016/j.bspc.2014.06.009.
+
 
 
