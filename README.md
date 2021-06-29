@@ -15,13 +15,20 @@ Make sure the codes are in directory “\” , Subject data is in format “\sub
 
 **Important Matlab codes** 
 (Note: For original Hoffman’s code info refer their readme document)
+
 	ICEEMD_wn : Modified ICEEMD code [2] with the white_noise modes being fed directly to the function to reduce redundancy and processing time
+	
 	emd :  Function for calculating the IMF components in the ICEEMD_wn function
+	
 	extracttrials_raw : Modified ‘extracttrials’ code from Hoffman’s, which extracts the EEG data from a session (as indicated by subject) and packages it into 1s long trials cell array in the native 2048 sampling frequency
+	
 	 raweeg_iceemdmodes: Function to take the packed 2048Hz EEG trials (created by extracttrials_hari) and calculates (IMF) ̅ modes of the trials and saves them to a cellarray whose name is given as input. [Note: This function is time consuming and takes 5-6 hours per subject (1-1.5 hours per session) to calculate the IMFs so please run them before hand if possible]
+	 
 	sigfrommodes : Function to repack filtered signals, made by selectively merging 2 or more (IMF) ̅ modes into 32hz trial array. This selection is made by choosing IMFs that contains >70% of their power spectral density, within the desired bandwidth of 1-12 Hz
+	
 	testclassification_modified : Modified testclassification codes of Hoffman’s [1], which returns a confusion chart of predictions, for a set of training files and test file.
 	crossvalidate_modified : Modified ‘crossvalidate’ file which returns the blockwise correct number of predictions made by the Bayesian-LDA in the trial file list provided as well as accuracies.
+	
 	Algorithm_test: Test file to run and test the implementation of the IMF filtering for the EEG data.
   
 **Example of usage**
