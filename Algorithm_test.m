@@ -42,12 +42,12 @@ for i = sample_sublist
      end
      
     %Calculate ICEEMD modes for each trial.
-    raweeg_iceemdmodes(trialfilelist,"memd_sub"+num2str(i)+"raw.mat");  %
+    raweeg_iceemdmodes(trialfilelist,"iceemd_sub"+num2str(i)+"raw.mat");  %
     
     %% ---------------------------------------------------------------
     % Packages filtered signal from IMFs into the trial signals
    
-    sigfrommodes(trialfilelist,"modes_sub"+num2str(i)+"raw"); % Pack signal
+    sigfrommodes(trialfilelist,"iceemd_sub"+num2str(i)+"raw"); % Pack signal
    
     
     %% Calculate performance of IMF Filter and store accuracies
