@@ -46,6 +46,11 @@ for i = sample_sublist
     
     %% ---------------------------------------------------------------
     % Packages filtered signal from IMFs into the trial signals
+    
+    for t = 1:4
+    extracttrials("subject"+num2str(i)+"\session"+num2str(t)+"\",trialfilelist{t})
+   
+    end
    
     sigfrommodes(trialfilelist,"iceemd_sub"+num2str(i)+"raw"); % Pack signal
    
